@@ -6,9 +6,10 @@ Created on 27/01/2015
 '''
 
 import unittest
+from marzullo import *
 
 class testMarzullo(unittest.TestCase):
     
     def testMarzulloExists(self):
-        marzullo([[6,-1]])
+        marzulloA([[6,-1]])
         
