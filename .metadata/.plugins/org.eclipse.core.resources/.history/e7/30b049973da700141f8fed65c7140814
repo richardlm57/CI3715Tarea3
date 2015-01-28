@@ -13,13 +13,8 @@ def marzulloAlg(reservation, start, end):
     temp=reservation[:]
     temp.append([start,-1])
     temp.append([end,1])
-    temp.sort()
-    best,count,i=0,0,0
-    while i<len(temp):
-        count-=temp[i][1]
-        if count>best:
-            best,beststart,bestend=count,temp[i][0],temp[i+1][0]
-    return [best,beststart,bestend]
+    n = len(temp)/2
+    return [n, temp[0][0],temp[1][0]]
     
       
     
