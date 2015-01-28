@@ -18,13 +18,8 @@ class testMarzullo(unittest.TestCase):
     
     def testAddSecondReservation(self):
         self.assertEqual(marzulloAlg([[600,1],[700,-1]],900,1000),[1,600,700])
-        
-    def testOverlapping(self):
-        self.assertEqual(marzulloAlg([[700,1],[1000,-1],[900,1],[1400,-1]],800,1100),[3,900,1000])
             
-    def testStartEqualsEnd(self):
-        self.assertEqual(marzulloAlg([[600,1],[700,-1],[900,1],[1000,-1]],700,800),[1,600,700])
-        
-    
+    def testOverlapping(self):
+        self.assertEqual(marzulloAlg([[600,1],[700,-1],[900,1],[1000,-1]],600,800),[1,600,700])
     
     

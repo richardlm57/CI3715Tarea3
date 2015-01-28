@@ -11,12 +11,12 @@ def marzulloAlg(reservation, start, end):
     assert (end > 600 and end <= 1800)
     assert (start % 100 == 0 and end % 100 == 0)
     temp=reservation[:]
-    temp.append([start,1])
-    temp.append([end,-1])
+    temp.append([start,-1])
+    temp.append([end,1])
     temp.sort()
     best,count,i=0,0,0
     while i<len(temp):
-        count+=temp[i][1]
+        count-=temp[i][1]
         if count>best:
             best,beststart,bestend=count,temp[i][0],temp[i+1][0]
         i+=1
