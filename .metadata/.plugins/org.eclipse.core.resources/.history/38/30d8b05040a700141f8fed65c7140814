@@ -20,6 +20,6 @@ class testMarzullo(unittest.TestCase):
         self.assertEqual(marzulloAlg([[600,-1],[700,1]],900,1000),[1,600,700])
         
     
-    
+        
     
     

@@ -19,7 +19,7 @@ def marzulloAlg(reservation, start, end):
         count-=temp[i][1]
         if count>best:
             best,beststart,bestend=count,temp[i][0],temp[i+1][0]
-        i+=1
+        i++
     return [best,beststart,bestend]
     
       

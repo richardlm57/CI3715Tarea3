@@ -13,13 +13,8 @@ class testMarzullo(unittest.TestCase):
     def testMarzulloExists(self):
         marzulloAlg([[600,-1],[700,1]],600,800)
         
-    def testAddFirstReservation(self):
-        self.assertEqual(marzulloAlg([],900,1000),[1,900,1000])
-    
-    def testAddSecondReservation(self):
-        self.assertEqual(marzulloAlg([[600,-1],[700,1]],900,1000),[1,600,700])
+    def testOneInterval(self):
+        self.assertEqual(marzulloAlg([[600,-1],[700,1]],600,800),[1,600,700])
         
-    
-    
     
     

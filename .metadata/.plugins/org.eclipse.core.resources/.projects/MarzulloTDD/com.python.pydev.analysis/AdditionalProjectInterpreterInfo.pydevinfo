@@ -1,21 +1,18 @@
 -- VERSION_4
 -- START DISKCACHE
 /home/richard/Documentos/IngSoftware/CI3715Tarea3/.metadata/.plugins/org.eclipse.core.resources/.projects/MarzulloTDD/com.python.pydev.analysis/v2_indexcache
-marzullo|1422483106000|/home/richard/Documentos/IngSoftware/CI3715Tarea3/MarzulloTDD/marzullo.py
-testing|1422482701000|/home/richard/Documentos/IngSoftware/CI3715Tarea3/MarzulloTDD/testing.py
+marzullo|1422484994000|/home/richard/Documentos/IngSoftware/CI3715Tarea3/MarzulloTDD/marzullo.py
 -- END DISKCACHE
 -- START DICTIONARY
-3
+1
 1=marzullo
-3=testMarzullo
-2=testing
 -- END DICTIONARY
 -- START TREE 1
 4
 !<m|0|
 mar|1|marzulloAlg!10@
 par|0|
-tes|1|testMarzullo!17@
+tes|0|
 -- END TREE
 -- START TREE 2
 7
@@ -25,5 +22,5 @@ _ma|0|
 _re|0|
 add|0|
 mar|0|
-tes|2|testMarzulloExists!3&18@testOneInterval!3&18@
+tes|0|
 -- END TREE
