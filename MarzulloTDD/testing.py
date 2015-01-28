@@ -11,6 +11,9 @@ from marzullo import *
 class testMarzullo(unittest.TestCase):
     
     def testMarzulloExists(self):
-        marzulloA([[6,-1]])
+        marzulloA([[6,-1],[7,1]])
+        
+    def testOneInterval(self):
+        self.assertEqual(marzulloA([[6,-1],[7,1]]),[1,6,7])
         
     
