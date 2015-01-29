@@ -25,13 +25,13 @@ class testMarzullo(unittest.TestCase):
     def testStartEqualsEnd(self):
         self.assertEqual(marzulloAlg([[600,-1],[700,1],[900,-1],[1000,1]],700,800),[1,600,700])
     
-    def testNewReservationInAFullInterval(self):
+    def testNewReservationCantBeIncluded1(self):
         self.assertEqual(marzulloAlg([[700,-1],[900,1]]*10,800,900),[11,800,900]) 
         
-    def testNewReservationBetweenTwoFullIntervals(self):
-        self.assertEqual(marzulloAlg([[1300,-1],[1500,1],[1700,-1],[1800,1]]*10,1400,1600),[11,1400,1500]) 
+    def testNewReservationCantBeIncluded2(self):
+        self.assertEqual(marzulloAlg([[1300,-1],[1500,1],[1700,-1],[1800,1]]*10,1400,1600),[11,1300,1500]) 
         
-    def testNewReservationOutOfAFullInterval(self):
+    def testNewReservationCanBeIncluded(self):
         self.assertEqual(marzulloAlg([[700,-1],[900,1]]*10,1100,1600),[10,700,900])    
     
     
