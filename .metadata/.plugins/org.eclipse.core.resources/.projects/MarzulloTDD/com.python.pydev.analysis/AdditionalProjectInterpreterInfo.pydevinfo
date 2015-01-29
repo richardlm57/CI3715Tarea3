@@ -1,21 +1,29 @@
 -- VERSION_4
 -- START DISKCACHE
 /home/richard/Documentos/IngSoftware/CI3715Tarea3/.metadata/.plugins/org.eclipse.core.resources/.projects/MarzulloTDD/com.python.pydev.analysis/v2_indexcache
-marzullo|1422560500000|/home/richard/Documentos/IngSoftware/CI3715Tarea3/MarzulloTDD/marzullo.py
-testing|1422561050000|/home/richard/Documentos/IngSoftware/CI3715Tarea3/MarzulloTDD/testing.py
+marzullo|1422562820000|/home/richard/Documentos/IngSoftware/CI3715Tarea3/MarzulloTDD/marzullo.py
+testing|1422563274000|/home/richard/Documentos/IngSoftware/CI3715Tarea3/MarzulloTDD/testing.py
 -- END DISKCACHE
 -- START DICTIONARY
-3
+5
 1=marzullo
-3=testMarzullo
+4=ParkingLot.__init__
+3=ParkingLot
+5=testMarzullo
 2=testing
 -- END DICTIONARY
 -- START TREE 1
-2
-mar|1|marzulloAlg!10@
+4
+!<m|0|
+mar|0|
+par|1|ParkingLot!9@
 tes|1|testMarzullo!17@
 -- END TREE
 -- START TREE 2
-1
-tes|8|testMarzulloExists!3&18@testOverlapping!3&18@testAddFirstReservation!3&18@testStartEqualsEnd!3&18@testNewReservationCanBeIncluded!3&18@testNewReservationCantBeIncluded2!3&18@testAddSecondReservation!3&18@testNewReservationCantBeIncluded1!3&18@
+5
+__i|1|__init__!3&10@
+_ma|1|_maxspots!4&11@
+_re|1|_reservation!4&11@
+mar|1|marzulloAlg!3&10@
+tes|8|testMarzulloExists!5&18@testOverlapping!5&18@testAddFirstReservation!5&18@testNewReservationBetweenTwoFullIntervals!5&18@testStartEqualsEnd!5&18@testNewReservationOutOfAFullInterval!5&18@testAddSecondReservation!5&18@testNewReservationInAFullInterval!5&18@
 -- END TREE

@@ -3,11 +3,11 @@ INSTUPtesting
 INFOS:&&1|1|2|0&&2|3|2|1&&2|4|2|1&&2|5|2|1&&2|6|2|1&&2|7|2|1&&2|8|2|1&&2|9|2|1&&2|10|2|1
 testOverlapping=6
 testStartEqualsEnd=7
-testNewReservationCanBeIncluded=10
 testAddSecondReservation=5
 testMarzullo=1
 testing=2
+testNewReservationOutOfAFullInterval=10
 testMarzulloExists=3
 testNewReservationInAFullInterval=8
-testNewReservationBetweenTwoFullI=9
+testNewReservationBetweenTwoFullIntervals=9
 testAddFirstReservation=4
