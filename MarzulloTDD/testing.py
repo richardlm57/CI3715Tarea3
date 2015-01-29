@@ -8,6 +8,8 @@ Created on 27/01/2015
 import unittest
 from marzullo import *
 
+# Inicio de pruebas por TDD
+
 class testMarzullo(unittest.TestCase):
     
     def testMarzulloExists(self):
@@ -41,6 +43,13 @@ class testMarzullo(unittest.TestCase):
     def testNewReservationOutOfAFullInterval(self):
         parkinglot = ParkingLot([[700,-1],[900,1]]*10) 
         self.assertTrue(parkinglot.marzulloAlg(1100,1600))
-
-    
         
+    # Inicio de casos de prueba por análisis de frontera
+    
+    def testReservationUsingLastSpot(self):
+        parkinglot = ParkingLot([[1200,-1],[1400,1]]*9) 
+        self.assertTrue(parkinglot.marzulloAlg(1200,1300))
+        
+    def testNewReservationBetweenTwoFullIntervals2(self):
+        parkinglot = ParkingLot([[1300,-1],[1500,1],[1700,-1],[1800,1]]*10) 
+        self.assertTrue(parkinglot.marzulloAlg(1500,1700))

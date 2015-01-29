@@ -1,6 +1,6 @@
 INSTUPtesting
 /home/richard/Documentos/IngSoftware/CI3715Tarea3/MarzulloTDD/testing.py
-INFOS:&&1|1|2|0&&2|3|2|1&&2|4|2|1&&2|5|2|1&&2|6|2|1&&2|7|2|1&&2|8|2|1&&2|9|2|1&&2|10|2|1
+INFOS:&&1|1|2|0&&2|3|2|1&&2|4|2|1&&2|5|2|1&&2|6|2|1&&2|7|2|1&&2|8|2|1&&2|9|2|1&&2|10|2|1&&2|8|2|1
 testOverlapping=6
 testStartEqualsEnd=7
 testAddSecondReservation=5
