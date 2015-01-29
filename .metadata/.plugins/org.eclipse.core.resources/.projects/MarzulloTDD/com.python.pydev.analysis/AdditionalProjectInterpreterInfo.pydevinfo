@@ -1,25 +1,26 @@
 -- VERSION_4
 -- START DISKCACHE
 /home/richard/Documentos/IngSoftware/CI3715Tarea3/.metadata/.plugins/org.eclipse.core.resources/.projects/MarzulloTDD/com.python.pydev.analysis/v2_indexcache
-marzullo|1422572332000|/home/richard/Documentos/IngSoftware/CI3715Tarea3/MarzulloTDD/marzullo.py
+testing|1422574652000|/home/richard/Documentos/IngSoftware/CI3715Tarea3/MarzulloTDD/testing.py
 -- END DISKCACHE
 -- START DICTIONARY
-3
-1=marzullo
-3=ParkingLot.__init__
-2=ParkingLot
+2
+2=testMarzullo
+1=testing
 -- END DICTIONARY
 -- START TREE 1
 2
-par|1|ParkingLot!9@
-tes|0|
+par|0|
+tes|1|testMarzullo!9@
 -- END TREE
 -- START TREE 2
-6
+8
 !<m|0|
-__i|1|__init__!2&10@
-_ma|1|_maxspots!3&11@
-_re|1|_reservation!3&11@
-mar|1|marzulloAlg!2&10@
-tes|0|
+__i|0|
+_cl|0|
+_ma|0|
+_op|0|
+_re|0|
+mar|0|
+tes|18|testMarzulloExists!2&10@testOverlapping!2&10@testReservationWithSameStartAndEnd!2&10@testNewReservationBetweenTwoFullIntervals!2&10@testReservationOneSpotLeft!2&10@testMaxReservationEnd!2&10@testReservationWithHalfTime!2&10@testReservationBiggestIntervalAndParkingLotFullAllDay!2&10@testStartEqualsEnd!2&10@testReservationAfterParkingLotClosingTime!2&10@testReservationBeforeParkingLotOpeningTime!2&10@testNewReservationBetweenTwoFullIntervals2!2&10@testNewReservationOutOfAFullInterval!2&10@testAddSecondReservation!2&10@testAddFirstReservation!2&10@testMinReservationStart!2&10@testReservationBiggestIntervalAndOneSpotLeft!2&10@testNewReservationInAFullInterval!2&10@
 -- END TREE

@@ -11,10 +11,13 @@ class ParkingLot():
     def __init__(self,reservation):
         self._reservation = reservation
         self._maxspots = 10
+        self._openingtime = 600
+        self._closingtime = 1800
 
     def marzulloAlg(self, start, end):    
         
-        if not(start < end and start >= 600 and end <= 1800 and start % 100 == 0 and end % 100 == 0):
+        if not(start < end and start >= self._openingtime and \
+               end <= self._closingtime and start % 100 == 0 and end % 100 == 0):
             raise AssertionError
         
         temp= self._reservation[:]
