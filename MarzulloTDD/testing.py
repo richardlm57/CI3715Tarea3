@@ -46,10 +46,28 @@ class testMarzullo(unittest.TestCase):
         
     # Inicio de casos de prueba por análisis de frontera
     
-    def testReservationUsingLastSpot(self):
+    #Extremo
+    
+    def testMinReservationStart(self):
+        parkinglot = ParkingLot([[1200,-1],[1400,1]])
+        self.assertTrue(parkinglot.marzulloAlg(600,1300))
+    
+    # Extremo
+        
+    def testMaxReservationEnd(self):
+        parkinglot = ParkingLot([[1200,-1],[1400,1]])
+        self.assertTrue(parkinglot.marzulloAlg(1500,1800))
+    
+    # Extremo
+    
+    def testReservationOneSpotLeft(self):
         parkinglot = ParkingLot([[1200,-1],[1400,1]]*9) 
         self.assertTrue(parkinglot.marzulloAlg(1200,1300))
-        
+    
+    # Malicia
+            
     def testNewReservationBetweenTwoFullIntervals2(self):
         parkinglot = ParkingLot([[1300,-1],[1500,1],[1700,-1],[1800,1]]*10) 
         self.assertTrue(parkinglot.marzulloAlg(1500,1700))
+        
+    
