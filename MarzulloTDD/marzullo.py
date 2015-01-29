@@ -14,10 +14,7 @@ class ParkingLot():
 
     def marzulloAlg(self, start, end):    
         
-        assert(start < end)
-        assert (start >= 600 and start < 1800)
-        assert (end > 600 and end <= 1800)
-        assert (start % 100 == 0 and end % 100 == 0)
+        assert(start < end and start >= 600 and end <= 1800 and start % 100 == 0 and end % 100 == 0)
         
         temp= self._reservation[:]
         temp.append([start,-1])
