@@ -81,3 +81,21 @@ class testMarzullo(unittest.TestCase):
     def testReservationBiggestIntervalAndParkingLotFullAllDay(self):
         parkinglot = ParkingLot([[600,-1],[1800,1]]*10) 
         self.assertFalse(parkinglot.marzulloAlg(600,1800))
+        
+    # Verificación de precondicones
+    
+    def testReservationBeforeParkingLotOpeningTime(self):
+        parkinglot = ParkingLot([])
+        self.assertRaises(AssertionError,parkinglot.marzulloAlg,500,700)
+        
+    def testReservationAfterParkingLotClosingTime(self):
+        parkinglot = ParkingLot([])
+        self.assertRaises(AssertionError,parkinglot.marzulloAlg,1700,1900)
+        
+    def testReservationWithHalfTime(self):
+        parkinglot = ParkingLot([])
+        self.assertRaises(AssertionError,parkinglot.marzulloAlg,1430,1530)
+        
+    def testReservationWithSameStartAndEnd(self):
+        parkinglot = ParkingLot([])
+        self.assertRaises(AssertionError,parkinglot.marzulloAlg,1400,1400)
