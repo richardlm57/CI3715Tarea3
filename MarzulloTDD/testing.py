@@ -70,4 +70,14 @@ class testMarzullo(unittest.TestCase):
         parkinglot = ParkingLot([[1300,-1],[1500,1],[1700,-1],[1800,1]]*10) 
         self.assertTrue(parkinglot.marzulloAlg(1500,1700))
         
+    # Esquina
     
+    def testReservationBiggestIntervalAndOneSpotLeft(self):
+        parkinglot = ParkingLot([[600,-1],[1800,1]]*9) 
+        self.assertTrue(parkinglot.marzulloAlg(600,1800))
+        
+    # Esquina maliciosa
+    
+    def testReservationBiggestIntervalAndParkingLotFullAllDay(self):
+        parkinglot = ParkingLot([[600,-1],[1800,1]]*10) 
+        self.assertFalse(parkinglot.marzulloAlg(600,1800))
