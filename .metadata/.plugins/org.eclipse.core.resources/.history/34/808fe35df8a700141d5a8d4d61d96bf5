@@ -42,3 +42,7 @@ class ParkingLot():
                 self._reservation.append([end,1])
                 return True
         return False
+              
+    
+        return [best,beststart,bestend]   
+    

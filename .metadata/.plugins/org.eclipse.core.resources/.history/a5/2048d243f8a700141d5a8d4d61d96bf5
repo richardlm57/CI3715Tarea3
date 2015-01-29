@@ -31,14 +31,6 @@ class ParkingLot():
             if count>best:
                 best,beststart,bestend=count,temp[i][0],temp[i+1][0]
             i+=1
-            
-        if best<=self._maxspots:
-            self._reservation.append([start,-1])
-            self._reservation.append([end,1])
-            return True
-        else:
-            if end<=beststart or start>=bestend:
-                self._reservation.append([start,-1])
-                self._reservation.append([end,1])
-                return True
-        return False
+    
+        return [best,beststart,bestend]   
+    

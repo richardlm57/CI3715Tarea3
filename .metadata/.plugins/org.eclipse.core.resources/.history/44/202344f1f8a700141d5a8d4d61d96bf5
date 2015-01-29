@@ -36,7 +36,7 @@ class testMarzullo(unittest.TestCase):
         
     def testNewReservationBetweenTwoFullIntervals(self):
         parkinglot = ParkingLot([[1300,-1],[1500,1],[1700,-1],[1800,1]]*10) 
-        self.assertFalse(parkinglot.marzulloAlg(1400,1600)) 
+        self.assertTrue(parkinglot.marzulloAlg(1400,1600)) 
         
     def testNewReservationOutOfAFullInterval(self):
         parkinglot = ParkingLot([[700,-1],[900,1]]*10) 
